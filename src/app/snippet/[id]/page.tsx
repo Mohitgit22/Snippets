@@ -62,20 +62,16 @@
 
 
 
-
-// import { Button } from "@/components/ui/button";
 import { prisma } from "@/lib/prisma";
-// import Link from '../../../../node_modules/next/link';
-// import * as actions from "@/actions"
 import { notFound } from '../../../../node_modules/next/navigation';
-import SnippetDetailClient from "../../../components/SnippetDetailClient" // Import client component
+import SnippetDetailClient from "../../../components/SnippetDetailClient"; // Import client component
 
 export const metadata = {
   title: "Edit Snippet",
 };
 
 const SnippetDetailPage = async ({ params }: { params: { id: string } }) => {
-  const id = parseInt(params.id); // Convert string to number
+  const id = parseInt(params.id); // Ensure ID is a number
 
   const snippet = await prisma.snippet.findUnique({
     where: { id },
@@ -90,7 +86,7 @@ const SnippetDetailPage = async ({ params }: { params: { id: string } }) => {
 
 export default SnippetDetailPage;
 
-// Keep generateStaticParams in the server component
+// Generate static params for dynamic routes
 export const generateStaticParams = async () => {
   const snippets = await prisma.snippet.findMany();
   return snippets.map((snippet) => ({ id: snippet.id.toString() }));

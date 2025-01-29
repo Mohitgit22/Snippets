@@ -1,5 +1,24 @@
+// "use client";
+// import Link from "next/link";
+// import { Button } from "@/components/ui/button";
 
+// interface SnippetCardProps {
+//   id: string;
+//   title: string;
+// }
 
+// const SnippetCard = ({ id, title }: SnippetCardProps) => {
+//   return (
+//     <div className="flex items-center justify-between bg-gray-950 p-4 rounded-lg shadow-md hover:from-gray-700 hover:to-black transition-all duration-300">
+//     <h3 className="text-lg font-semibold text-white">{title}</h3>
+//     <Link href={`/snippet/${id}`}>
+//       <Button className="bg-white text-black hover:bg-gray-100 transition-colors duration-300">View</Button> 
+//     </Link>
+//   </div> 
+//   );
+// };
+
+// export default SnippetCard;
 "use client";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -11,19 +30,16 @@ interface SnippetCardProps {
 
 const SnippetCard = ({ id, title }: SnippetCardProps) => {
   return (
-    <div className="flex items-center justify-between bg-gray-950 p-4 rounded-lg shadow-md hover:from-gray-700 hover:to-black transition-all duration-300">
-    <h3 className="text-lg font-semibold text-white">{title}</h3>
-    <Link href={`/snippet/${id}`}>
-      <Button className="bg-white text-black hover:bg-gray-100 transition-colors duration-300">View</Button> 
-    </Link>
-  </div>
-//    <div className="flex items-center justify-between bg-gray-200 p-4 rounded-lg shadow-md hover:bg-gray-200 transition-all duration-300">
-//    <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
-//    <Link href={`snippet/${id}`}>
-//      <Button className="bg-black text-white hover:bg-gray-700">View</Button> {/* Changed hover color */}
-//    </Link>
-//  </div>
-  
+    <div className="bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-700 transition-transform transform hover:scale-105 hover:shadow-xl">
+      <h3 className="text-xl font-semibold text-gray-200 mb-2">{title}</h3>
+      <div className="flex justify-end">
+        <Link href={`/snippet/${id}`}>
+          <Button className="bg-white text-black hover:bg-gray-400 transition-colors duration-300 px-4 py-2 rounded-lg">
+            View
+          </Button>
+        </Link>
+      </div>
+    </div>
   );
 };
 

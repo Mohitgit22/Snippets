@@ -10,6 +10,16 @@ const EditPageSnippet = async ({params} : {params:Promise<{id:string}>}) => {
             id,
         }
     })
+
+     // Handle the case where snippet is null
+  if (!snippet) {
+    return (
+      <div className="text-center text-gray-500">
+        Snippet not found.
+      </div>
+    );
+  }
+  
   return (
     <EditSnippetForm snippet = {snippet}/>
   )

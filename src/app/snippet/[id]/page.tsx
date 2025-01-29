@@ -62,10 +62,10 @@
 
 
 
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import { prisma } from "@/lib/prisma";
-import Link from '../../../../node_modules/next/link';
-import * as actions from "@/actions"
+// import Link from '../../../../node_modules/next/link';
+// import * as actions from "@/actions"
 import { notFound } from '../../../../node_modules/next/navigation';
 import SnippetDetailClient from "../../../components/SnippetDetailClient" // Import client component
 

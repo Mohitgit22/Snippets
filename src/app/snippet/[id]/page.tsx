@@ -62,6 +62,7 @@
 
 
 
+
 // import { Button } from "@/components/ui/button";
 import { prisma } from "@/lib/prisma";
 // import Link from '../../../../node_modules/next/link';
@@ -74,7 +75,7 @@ export const metadata = {
 };
 
 const SnippetDetailPage = async ({ params }: { params: { id: string } }) => {
-  const id = parseInt(params.id);
+  const id = parseInt(params.id); // Convert string to number
 
   const snippet = await prisma.snippet.findUnique({
     where: { id },
@@ -84,9 +85,7 @@ const SnippetDetailPage = async ({ params }: { params: { id: string } }) => {
     notFound();
   }
 
-  return (
-    <SnippetDetailClient snippet={snippet} /> // Pass data to client component
-  );
+  return <SnippetDetailClient snippet={snippet} />; // Pass data to client component
 };
 
 export default SnippetDetailPage;

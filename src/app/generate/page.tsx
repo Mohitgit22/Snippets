@@ -61,7 +61,7 @@ const GenerateAIPage = () => {
             {output && (
                 <div className="mt-6">
                     <h3 className="text-xl font-semibold text-gray-800">Generated Output:</h3>
-                    <div className="mt-2 p-6 bg-gray-100 rounded-md">
+                    <div className="mt-2 p-6 bg-gray-200 rounded-md">
                         <Markdown>{output}</Markdown>
                         <Button
                             className="mt-4"

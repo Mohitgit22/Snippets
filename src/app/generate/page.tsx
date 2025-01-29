@@ -44,7 +44,7 @@ const GenerateAIPage = () => {
                     type="text"
                     id="title"
                     value={prompt}
-                    onChange={(e) => {setPrompt(e.target.value)}} value={prompt}
+                    onChange={(e) => {setPrompt(e.target.value)}} 
                     className="mt-2 w-full border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 hover:border-gray-500 hover:ring-1 hover:ring-gray-400"
                 />
             </div>

@@ -3,14 +3,10 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
-import { prisma } from '@/lib/prisma'
-import React, { useActionState, useState } from 'react'
-import { redirect } from '../../../../node_modules/next/navigation'
+// import { prisma } from '@/lib/prisma'
+import React, { useActionState } from 'react'
+// import { redirect } from '../../../../node_modules/next/navigation'
 import * as actions from "@/actions"
-
-// export const metadata = {
-//     title: "New Snippet"
-//   }
 
 
 const CreateSnippetPage = () => {

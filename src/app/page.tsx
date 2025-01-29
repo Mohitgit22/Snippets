@@ -44,7 +44,7 @@ export default async function Home() {
       {/* Snippet Cards in Grid Layout */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {snippets.map((snippet) => (
-          <SnippetCard key={snippet.id} id={snippet.id} title={snippet.title} />
+          <SnippetCard key={snippet.id} id={String(snippet.id)} title={snippet.title} />
         ))}
       </div>
 

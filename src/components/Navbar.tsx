@@ -17,8 +17,9 @@ const Navbar = () => {
 
     if (isVisible) {
         return (
+            <div className="relative">
             <nav
-                className="px-[10%] bg-black text-white shadow-lg sticky top-0 left-0 w-full py-4 flex justify-between items-center"
+                className="px-[10%] bg-black text-white shadow-lg top-0 left-0 w-full py-4 flex justify-between items-center"
                 aria-label="Main Navigation"
             >
                 <Link
@@ -33,6 +34,7 @@ const Navbar = () => {
                     Your one-stop hub for code snippets.
                 </div>
             </nav>
+            </div>
         );
     }
 

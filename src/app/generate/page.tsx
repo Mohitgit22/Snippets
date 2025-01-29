@@ -39,13 +39,13 @@ const GenerateAIPage = () => {
             <h2 className="text-3xl font-semibold text-gray-800 mb-4">Generate Content Using AI</h2>
 
             <div className="mb-4">
-                <Label htmlFor="title">Enter Prompt for AI Generation</Label>
+                <Label htmlFor="title" >Enter Prompt for AI Generation</Label>
                 <Input
                     type="text"
                     id="title"
                     value={prompt}
                     onChange={(e) => {setPrompt(e.target.value)}} value={prompt}
-                    className="mt-2 w-full"
+                    className="mt-2 w-full border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 hover:border-gray-500 hover:ring-1 hover:ring-gray-400"
                 />
             </div>
 

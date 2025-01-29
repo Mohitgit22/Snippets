@@ -13,14 +13,6 @@ export const metadata = {
 export default async function Home() {
   const snippets = await prisma.snippet.findMany();
 
-  if (!snippets || snippets.length === 0) {
-    return (
-      <div className="text-center text-gray-500">
-        No snippets available at the moment.
-      </div>
-    );
-  }
-
   return (
     <div className="container mx-auto px-6 py-8">
       {/* Section Heading with Bottom Border */}
@@ -43,6 +35,11 @@ export default async function Home() {
 
       {/* Snippet Cards in Grid Layout */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      if (!snippets || snippets.length === 0) {
+         <div className="text-center text-gray-500">
+              No snippets available at the moment.
+              </div>
+              } 
         {snippets.map((snippet) => (
           <SnippetCard key={snippet.id} id={String(snippet.id)} title={snippet.title} />
         ))}

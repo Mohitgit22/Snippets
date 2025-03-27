@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CODESTACK - High-Performance Code Snippet Management Platform
 
-## Getting Started
+CODESTACK is a high-performance platform built with **Next.js** to streamline code snippet management and accessibility. It provides a seamless experience for storing, editing, and generating code snippets dynamically using AI.
 
-First, run the development server:
+## 🚀 Features
+- **Next.js SSR & Dynamic Routing**: Ensures fast and efficient rendering.
+- **Prisma ORM & PostgreSQL**: Manages database operations seamlessly.
+- **CodeMirror Integration**: Provides a rich code-editing experience.
+- **AI-Powered Code Generation**: Uses Google Generative AI to generate code from user prompts.
+- **CRUD Functionality**: Enables creating, updating, and deleting code snippets.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Technologies Used
+- **Frontend & Backend**: Next.js
+- **Database**: Prisma ORM with PostgreSQL
+- **UI Components**: ShadCN UI
+- **Code Editor**: CodeMirror
+- **AI Integration**: Google Generative AI
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📸 Screenshots
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Homepage
+![Homepage](https://github.com/Mohitgit22/Snippets/blob/353410341560f41873b168d1c7ea423e00d4f203/code_snippet.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Viewing a Code Snippet
+![Code Snippet](https://github.com/Mohitgit22/Snippets/blob/353410341560f41873b168d1c7ea423e00d4f203/snippet1.png)
 
-## Learn More
+### Editing a Code Snippet
+![Editing Snippet](https://github.com/Mohitgit22/Snippets/blob/353410341560f41873b168d1c7ea423e00d4f203/snippet2.png)
 
-To learn more about Next.js, take a look at the following resources:
+### Generating Code with AI
+![AI Code Generation](https://github.com/Mohitgit22/Snippets/blob/353410341560f41873b168d1c7ea423e00d4f203/snippet3.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Mohitgit22/Snippets.git
+   cd Snippets
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Set up your environment variables in a `.env` file:
+   ```env
+   DATABASE_URL=your_postgresql_url
+   NEXT_PUBLIC_AI_API_KEY=your_ai_api_key
+   ```
+4. Run the development server:
+   ```sh
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔮 Future Enhancements
+- Implement **user authentication** for personal snippet storage.
+- Enable **collaborative editing** for teams.
+- Add **dark mode support** for enhanced UI/UX.
 
-## Deploy on Vercel
+## 🤝 Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
